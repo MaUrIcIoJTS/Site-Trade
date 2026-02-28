@@ -29,7 +29,7 @@ O projeto é dividido em duas partes:
 
 ---
 
-## 🤖 IA Trader (Back-end)
+##  IA Trader (Back-end)
 
 Sistema de análise técnica baseado em:
 
@@ -121,6 +121,7 @@ IA Trader Institucional rodando em http://localhost:3000
 
 # ⚠️ Observações Importantes
 
+- Parte da analise foi criada com a ajuda de IA, está demarcado nó código o início do uso.
 - O sistema não executa ordens reais.
 - A IA não garante resultados futuros.
 - O cálculo de probabilidade é baseado em heurística.
