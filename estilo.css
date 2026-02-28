@@ -1,0 +1,113 @@
+body {
+  background: rgb(120, 120, 248);
+  font: normal 10pt Arial;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr auto; /* duas colunas: esquerda maior, direita menor */
+  grid-template-rows: auto auto; /* duas linhas */
+  grid-template-areas: "box1 box2" "box3 box2";
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.box {
+  text-align: center;
+  background: #b2f5ea;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#box1 {
+  width: 400px;
+  grid-area: box1;
+  box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.616);
+  max-height: 500px;
+}
+
+/* formatação campo de imput, alinhamento.*/
+#box1 p {
+  display: grid;
+  grid-template-columns: 150px 120px; /* 150px p/ label, resto p/ input */
+  align-items: center;
+  margin: 10px 40px;
+}
+
+#box1 input[type="text"] {
+  width: 100%; /* input acompanha a largura disponível */
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#box1 p:last-of-type {
+  grid-template-columns: 1fr 1fr; /* p/ alinhar os 2 botões lado a lado */
+  gap: 10px;
+}
+/* formatação campo de imput, alinhamento.*/
+
+#box2 {
+  grid-area: box2;
+  width: 170px;
+  height: 150px;
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.616);
+}
+
+#box3 {
+  grid-area: box3;
+  box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.616);
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+}
+
+input[type="button"] {
+  background-color: #ffffff;
+  color: black;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.616);
+}
+
+button {
+  background-color: #ffffff;
+  color: black;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.616);
+}
+
+input[type="number"] {
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.616);
+  height: 25px;
+}
+
+input[type="text"] {
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.616);
+  height: 25px;
+}
